@@ -186,7 +186,116 @@ nav li:hover {
     font-weight: bold;
 }
 
+.contenedor-formulario {
+    background-color:  rgba(156, 41, 66, 0.653);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 10px;
+    padding: 30px 30px 10px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 30px 5px black;
+}
 
+.mapa {
+    display: flex;
+}
+
+.mapa .mapita {
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px black;
+    background-color: rgba(156, 41, 66, 0.653);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 5px black;
+}
+
+.mapita iframe {
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.mapa p {
+    padding-top: 20px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.contenedor-formulario h2 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+.contenedor-formulario .elemento {
+    position: relative;
+}
+
+.contenedor-formulario .elemento label {
+    position: absolute;
+    left: 0px;
+    top: 17px;
+    font-size: 17px;
+    transition: 0.3s linear;
+    color: aliceblue;
+}
+
+.contenedor-formulario .elemento input {
+    width: 100%;
+    padding: 20px 0px 5px 0px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    margin-bottom: 30px;
+    color: aliceblue;
+    outline: none;
+    font-size: large;
+}
+
+.contenedor-formulario .elemento input[type="submit"] {
+    background-color: deeppink;
+    border: none;
+    padding: 10px;
+    color: azure;
+    font-size: larger;
+    margin-top: 20px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contenedor-formulario p {
+    color: aliceblue;
+    text-align: center;
+}
+
+.contenedor-formulario p a {
+    color: rgb(246, 102, 215);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.elemento input:focus ~ label, 
+.elemento input:valid ~ label {
+    top: -10px;
+    font-size: 15px;
+    color: rgb(246, 102, 215);
+}
+
+.contenedor-formulario .elemento input[type="submit"]:hover {
+    background-color: azure;
+    color: deeppink;
+}
+
+.contenedor-formulario .elemento textarea {
+    resize: none;
+}
 
 
 /* 
@@ -372,7 +481,30 @@ nav li:hover {
         margin: auto;
         margin: 10px auto 0px;
     }
+
+    .contenedor-formulario {
+        margin: 20px 10px;
+    }
+
+    .contenedor-formulario .elemento textarea {
+        width: 330px;
+    }
     
+    .mapa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mapita iframe {
+        width: 400px;
+        height: 400px;
+    }
+
+    .mapa p {
+        padding-top: 10px;
+        font-size: 25px;
+        font-weight: bolder;
+    }
 
 }
 

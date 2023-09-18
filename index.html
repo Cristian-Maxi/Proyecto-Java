@@ -21,8 +21,8 @@
             <ul>
                 <li><a class="activo" href="#">Inicio</a></li>
                 <li><a href="#calesita">Lugares de interes</a></li>
+                <li><a href="#contactenos">Contáctenos</a></li>
                 <li><a href="#monumentos">Monumentos</a></li>
-                <li><a href="#">Contáctenos</a></li>
             </ul>
         </nav>
     </header>
@@ -113,6 +113,36 @@
             </button>
           </div>
         </div>
+        </section>
+        <section class= "mapa">
+          <div class="mapita">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115903.41005611097!2d-65.43062865!3d-24.7960848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a35151b7f9%3A0xa5cd992cd587f206!2sSalta!5e0!3m2!1ses-419!2sar!4v1694998366809!5m2!1ses-419!2sar" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Necesitas un mapa?</p>
+          </div>
+          <div class="contenedor-formulario">
+            <h2 id="contactenos">Contáctenos</h2>
+            <form action="">
+              <form action="" method="post">
+                  <div class="elemento">
+                      <input type="text" name="nombre" id="nombre" required>
+                      <label for="nombre">Nombre</label>
+                  </div>
+                  <div class="elemento">
+                      <input type="text" name="apellido" id="apellido" required>
+                      <label for="apellido">Apellido</label>
+                  </div>
+                  <div class="elemento">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="elemento">
+                    <textarea name="comentario" id="comentario" cols="52" rows="10" placeholder="Escriba su comentario..."></textarea>
+                  </div>
+                  <div class="elemento">
+                      <input type="submit" value="Enviar">
+                  </div>
+            </form>
+          </div>
         </section>
         <section class="estatuas">
           <h2 id="monumentos">Monumentos</h2>
