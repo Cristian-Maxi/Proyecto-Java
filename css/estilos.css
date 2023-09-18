@@ -297,6 +297,54 @@ nav li:hover {
     resize: none;
 }
 
+footer {
+    position:relative;
+    margin-top: 230px;
+    bottom: 0px;
+    width: 100%;
+    height: 130px;
+    background-color: black;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 7px 0px 0px 0px;
+}
+
+footer ul li {
+    list-style-type: none;
+    color: aliceblue;
+}
+
+footer ul a {
+    text-decoration: none;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+footer ul a:hover {
+    color: rgb(250, 124, 192);
+}
+
+footer p:first-child {
+    color: aliceblue;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 3px;
+    background-color: rgba(156, 41, 66, 0.653);
+    letter-spacing: 2px;
+}
+
+#propiedad {
+    color: aliceblue;
+    font-size: 10px;
+    text-align: end;
+    margin-right: 5px;
+}
 
 /* 
 @media (max-width: 952px) {
@@ -379,7 +427,7 @@ nav li:hover {
     }
 
     header {
-        position: relative;
+        position: sticky;
     }
 
     header ul {
@@ -504,6 +552,14 @@ nav li:hover {
         padding-top: 10px;
         font-size: 25px;
         font-weight: bolder;
+    }
+
+    footer {
+        margin-top: 160px;
+    }
+
+    footer li a {
+        font-size: 28px;
     }
 
 }
